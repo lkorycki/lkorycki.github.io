@@ -126,7 +126,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 12pt;
+		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -3072,7 +3072,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 3em 3em 1em 5em ;
 		text-align: center;
 	}
 
@@ -3086,7 +3086,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 6em 5em 2em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3103,6 +3103,7 @@ input, select, textarea {
 				-ms-transition-delay: 0.5s;
 				transition-delay: 0.5s;
 				opacity: 1;
+				/*margin: -1em 0 1.5em 0;*/
 			}
 
 			#header.alt .logo {
@@ -3784,3 +3785,43 @@ input, select, textarea {
 			}
 
 		}
+
+/* Features */
+
+	.features2 article {
+		/*border-top: solid _size(border-width) * 1.5 _palette(border);*/
+		/*margin-bottom: _size(element-margin);*/
+		/*padding-top: _size(element-margin);*/
+		/*order-top: solid (_size(border-width) * 1.5) _palette(border);*/
+		margin-bottom: 0.8em;
+		padding-top: 0.8em;
+	}
+	.features2 article:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+	.features2 article .image {
+		display: inline-block;
+		padding-right: 2.5em;
+		vertical-align: middle;
+		width: 40%;
+	}
+	.features2 article .image img {
+		display: block;
+		width: 100%;
+	}
+	.features2 article .inner {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+	}
+	.features2 article .inner > :last-child {
+		margin-bottom: 0;
+	}
+
+	.features2 h4 {
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+
+
