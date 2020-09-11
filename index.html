@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
-                    <div class="slideanim"><img src="images/al_imb.png" class="thumbnail img-responsive"
+                    <div class="slideanim"><img src="images/os_imb.png" class="thumbnail img-responsive"
                                                 alt="Online Oversampling for Sparsely Labeled Imbalanced and Non-Stationary Data Streams"><br>
                     </div>
                 </div>
@@ -114,6 +114,28 @@
                         Learning from imbalanced data and data stream mining are among most popular areas in contemporary machine learning. There is a strong interplay between these domains, as data streams are frequently characterized by skewed distributions. However, most of existing works focus on binary problems, omitting significantly more challenging multi-class imbalanced data. In this paper, we propose a novel framework for learning from multi-class imbalanced data streams that simultaneously tackles three major problems in this area: (i) changing imbalance ratios among multiple classes; (ii) concept drift; and (iii) limited access to ground truth. We use active learning combined with streaming-based oversampling that uses both information about current class ratios and classifier errors on each class to create new instances in a meaningful way. Conducted experimental study shows that our single-classifier framework is capable of outperforming state-of-the-art ensembles dedicated to multi-class imbalanced data streams in both fully supervised and sparsely labeled learning scenarios.                    </h4>
                     <h4 class="text-danger"><strong> International Joint Conference on Neural Networks (IJCNN), Glasgow, UK, 2020. </strong><br>
                         <a href="https://www.researchgate.net/publication/341463040_Online_Oversampling_for_Sparsely_Labeled_Imbalanced_and_Non-Stationary_Data_Streams" target="_blank"><kbd>Paper</kbd></a>
+                        <kbd data-toggle="collapse" data-target="#temp">Bibtex</kbd>
+                    </h4>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-3 col-sm-offset-2">
+                    <br>
+                    <div class="slideanim"><img src="images/abst4.png" class="thumbnail img-responsive"
+                                                alt="Active Learning with Abstaining Classifiers for Imbalanced Drifting Data Streams"><br>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 text-left">
+                    <a href="https://ieeexplore.ieee.org/document/9006453" target="_blank">
+                        <h4 class="mark"><strong>Active Learning with Abstaining Classifiers for Imbalanced Drifting Data Streams</strong><br>
+                            <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
+                    <h4 class="h4-small">Learning from data streams is one of the most promising and challenging domains in modern machine learning. Proliferating online data sources provide us access to real-time knowledge we have never had before. At the same time, new obstacles emerge and we have to overcome them in order to fully and effectively utilize the potential of the data. Prohibitive time and memory constraints or non-stationary distributions are only some of the problems. When dealing with classification tasks, one has to remember that effective adaptation has to be achieved on weak foundations of partially labeled and often imbalanced data. In our work, we propose an online framework for binary classification, that aims to handle the complex problem of working with dynamic, sparsely labeled and imbalanced streams. The main part of it is a novel active learning strategy (MD-OAL) that is able to prioritize labeling of minority instances and, as a result, improve the balance of the learning process. We combine the strategy with a dynamic ensemble of base learners that can abstain from making decisions, if they are very uncertain. We adjust the abstaining mechanism in favor of minority instances, providing an effective method for handling remaining imbalance and a concept drift simultaneously. The conducted evaluation shows that in the challenging and realistic scenarios our framework outperforms state-of-the-art algorithms, providing higher resilience to the combined effect of limited labeling and imbalance.</h4>
+                    <h4 class="text-danger"><strong>IEEE International Conference on Big Data (Big Data), Los Angeles, CA, USA, 2019.</strong><br>
+                        <a href=https://ieeexplore.ieee.org/document/9006453 target="_blank"><kbd>Paper</kbd></a>
                         <kbd data-toggle="collapse" data-target="#temp">Bibtex</kbd>
                     </h4>
                     <br>
@@ -158,6 +180,28 @@
                         Data stream mining is a rapidly developing branch of contemporary machine learning. Ensemble approaches have proven themselves to be highly effective in this domain, due to their  predictive  power  and  capabilities  for  handling  evolving data.  One  of  the  key  aspects  of  ensemble  learning  is  diversity among  base  classifiers  –  it  improves  accuracy  and  allows  for anticipating  and  recovering  from  concept  drifts.  It  has  been shown that while diversity is desirable during changes, it may impede  learning  when  data  becomes  stationary.  In  this  paper, we  present  a  novel  ensemble  technique  that  exploits  the  idea of  dynamic  diversification,  which  increases  diversity  during changes  and  reduces  it  when  a  stream  becomes  stable.  The algorithm uses online clustering for this task by creating locally specialized base learners trained on spatially related instances. Three control strategies based on the novel range heuristic for managing  a  trade-off  between  error  (a  change  indicator)  and diversity are utilized. Additionally, two intensification strategies are  proposed  for  exploitation  of  newly  arriving  instances,  allowing for faster adaptation. Experimental study evaluates the general performance and diversity of the proposed algorithm, proving its capabilities to outperform state-of-the-art ensembles dedicated  to  drifting  data  stream  mining.</h4>
                     <h4 class="text-danger"><strong>IEEE International Conference on Big Data (Big Data), Seattle, WA, USA, 2018.</strong><br>
                         <a href=https://ieeexplore.ieee.org/document/8622038 target="_blank"><kbd>Paper</kbd></a>
+                        <kbd data-toggle="collapse" data-target="#temp">Bibtex</kbd>
+                    </h4>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-3 col-sm-offset-2">
+                    <br>
+                    <div class="slideanim"><img src="images/alsl2.png" class="thumbnail img-responsive"
+                                                alt="Combining Active Learning and Self-Labeling for Data Stream Mining"><br>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 text-left">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-59162-9_50" target="_blank">
+                        <h4 class="mark"><strong>Combining Active Learning and Self-Labeling for Data Stream Mining</strong><br>
+                            <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
+                    <h4 class="h4-small">Data stream mining is among the most vital contemporary data science challenges. In this work we concentrate on the issue of actual availability of true class labels. Assumption that the ground truth for each instance becomes known right after processing it is far from being realistic, due to usually high costs connected with its acquisition. Active learning is an attractive solution to this problem, as it selects most valuable instances for labeling. In this paper, we propose to augment the active learning module with self-labeling approach. This allows classifier to automatically label instances for which it displays the highest certainty and use them for further training. Although in this preliminary work we use a static threshold for self-labeling, the obtained results are encouraging. Our experimental study shows that this approach complements the active learning strategy and allows to improve data stream classification, especially in scenarios with very small labeling budget.</h4>
+                    <h4 class="text-danger"><strong>International Conference on Computer Recognition Systems (CORES), Wrocław, Poland, 2017.</strong><br>
+                        <a href=https://link.springer.com/chapter/10.1007/978-3-319-59162-9_50 target="_blank"><kbd>Paper</kbd></a>
                         <kbd data-toggle="collapse" data-target="#temp">Bibtex</kbd>
                     </h4>
                     <br>
