@@ -319,6 +319,7 @@ footer {
 
 .timeline__box:not(:last-of-type){
 	margin-bottom: 30px;
+	margin-top: 10px;
 }
 
 .timeline__box:before{
