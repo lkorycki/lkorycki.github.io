@@ -13,6 +13,7 @@ h4 {
 	color: #303030;
 	font-weight: 400;
 	margin-bottom: 15px;
+	text-align: justify;
 }
 
 .h4-small {
@@ -21,6 +22,7 @@ h4 {
 	color: #303030;
 	font-weight: 400;
 	margin-bottom: 10px;
+	text-align: justify;
 }
 
 .jumbotron {
@@ -280,6 +282,7 @@ footer {
 	position: relative;
 	padding-top: 1rem;
 	padding-bottom: 3rem;
+	text-align: justify;
 }
 
 /* Timeline line */
@@ -419,7 +422,7 @@ footer {
 }
 
 .page{
-	max-width: 850px;
+	max-width: 950px;
 	padding: 0 1.1em 2.5em 1.1em;
 	margin-left: auto;
 	margin-right: auto;
