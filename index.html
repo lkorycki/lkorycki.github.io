@@ -18,7 +18,7 @@
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="300">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top slideanim-hor-init-rev">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#home">HOME</a></li>
-                    <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#about">ME</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#about">ABOUT</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#events">EVENTS</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#research">RESEARCH</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#projects">PROJECTS</a></li>
@@ -81,14 +81,14 @@
         </div>
     </div>
 
-    <div id="events" class="container-fluid bg-grey slideanim-hor">
-        <div class="row">
+    <div id="events" class="container-fluid bg-grey">
+        <div class="row slideanim-hor">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="major center"><h2>Events</h2></div>
             </div>
         </div>
 
-        <div class="page">
+        <div class="page slideanim-hor">
             <div class="timeline">
 
 <!--                <div class="timeline__group">-->
@@ -192,7 +192,7 @@
         <div class="container-fluid slideanim-hor">
             <div class="major center"><h2>Research</h2></div>
 
-            <div class="row">
+            <div class="row slideanim-hor">
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
                     <div class="slideanim-vert"><img src="images/os_imb.png" class="thumbnail img-responsive"
@@ -223,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 text-left">
+                <div class="col-sm-5 text-left slideanim-hor">
                     <a href="https://ieeexplore.ieee.org/document/9006453" target="_blank">
                         <h4 class="mark"><strong>Active Learning with Abstaining Classifiers for Imbalanced Drifting Data Streams</strong><br>
                             <small><strong>Ł. Korycki</strong>, A.Cano, B. Krawczyk<br></small></h4></a>
@@ -244,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 text-left">
+                <div class="col-sm-5 text-left slideanim-hor">
                     <a href="https://ieeexplore.ieee.org/abstract/document/8964214" target="_blank">
                         <h4 class="mark"><strong>Unsupervised Drift Detector Ensembles for Data Stream Mining</strong><br>
                             <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
@@ -267,7 +267,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 text-left">
+                <div class="col-sm-5 text-left slideanim-hor">
                     <a href="https://ieeexplore.ieee.org/document/8622038" target="_blank">
                         <h4 class="mark"><strong>Clustering-Driven and Dynamically Diversified Ensemble for Drifting Data Streams</strong><br>
                         <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a><h4 class="h4-small">
@@ -289,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 text-left">
+                <div class="col-sm-5 text-left slideanim-hor">
                     <a href="https://link.springer.com/chapter/10.1007/978-3-319-59162-9_50" target="_blank">
                         <h4 class="mark"><strong>Combining Active Learning and Self-Labeling for Data Stream Mining</strong><br>
                             <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
@@ -305,9 +305,9 @@
         </div>
     </div>
 
-    <div id="projects" class="container-fluid bg-grey slideanim-hor">
-        <div class="major center"><h2>PROJECTS</h2></div>
-        <div class="row">
+    <div id="projects" class="container-fluid bg-grey">
+        <div class="major center slideanim-hor"><h2>PROJECTS</h2></div>
+        <div class="row slideanim-hor">
             <h1 class="text-center">Coming soon!</h1><br>
         </div>
     </div>
@@ -346,18 +346,19 @@
                         var pos = $(this).offset().top;
                         var winTop = $(window).scrollTop();
                         if (pos < winTop + 800) {
+                            console.log($(this));
                             $(this).addClass("slide-hor");
                         }
                     });
                 });
 
                 $(".slideanim-hor-init").each(async function () {
-                    await new Promise(r => setTimeout(r, 200));
+                    await new Promise(r => setTimeout(r, 400));
                     $(this).addClass("slide-hor");
                 });
 
                 $(".slideanim-hor-init-rev").each(async function () {
-                    await new Promise(r => setTimeout(r, 200));
+                    await new Promise(r => setTimeout(r, 400));
                     $(this).addClass("slide-hor-rev");
                 });
             })

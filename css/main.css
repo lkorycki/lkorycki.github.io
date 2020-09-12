@@ -34,7 +34,7 @@ h4 {
 
 .intro-anim-header{
 	opacity:0;
-	animation: fadein 2s forwards;
+	animation: fadein 1s forwards;
 }
 
 :root {
@@ -254,6 +254,40 @@ footer .glyphicon {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+
+.slideanim-hor-init-rev {
+	visibility: hidden;
+}
+
+.slide-hor-rev {
+	animation-name: slide-hor-rev;
+	-webkit-animation-name: slide-hor-rev;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+
+@keyframes slide-hor-rev {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slide-hor-rev {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-70%);
 	}
 	100% {
 		opacity: 1;
