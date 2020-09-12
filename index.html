@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#home">HOME</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#about">ME</a></li>
-                    <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#news">EVENTS</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#events">EVENTS</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#research">RESEARCH</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#projects">PROJECTS</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="data/Korycki_resume.pdf" target="_blank">CV</a></li>
@@ -44,26 +44,26 @@
     <div class="jumbotron" id="home">
         <div class="row">
             <div class="text-center">
-                <h1>Łukasz Korycki</h1>
-                <h3>PhD Student in ML/AI & Data Engineer</h3>
+                <div class="intro-anim-header delay200"><h1>Łukasz Korycki</h1></div>
+                <div class="intro-anim-header delay600"><h3>PhD Student in ML/AI & Data Engineer</h3></div>
                 <br>
                 <a href="https://www.linkedin.com/in/%C5%82ukasz-korycki-6062ab195/" target="_blank">
-                    <i class="fab fa-linkedin" style="font-size:48px;color:#22e5a4"></i></a>
+                    <i class="fab fa-linkedin intro-anim-header delay100off" style="font-size:48px;color:#22e5a4"></i></a>
                 <a href="https://www.researchgate.net/profile/Lukasz_Korycki2" target="_blank">
-                    <i class="ai ai-researchgate-square" style="font-size:48px;color:#22e5a4"></i></a></a>
+                    <i class="ai ai-researchgate-square intro-anim-header delay200off" style="font-size:48px;color:#22e5a4"></i></a></a>
                 <a href="https://scholar.google.com/citations?user=cLtlBLgAAAAJ&hl=en" target="_blank">
-                    <i class="ai ai-google-scholar-square" style="font-size:48px;color:#22e5a4"></i></a>
+                    <i class="ai ai-google-scholar-square intro-anim-header delay300off" style="font-size:48px;color:#22e5a4"></i></a>
                 <a href="https://twitter.com" target="_blank">
-                    <i class="fa fa-twitter-square" style="font-size:48px;color:#22e5a4"></i></a>
+                    <i class="fa fa-twitter-square intro-anim-header delay400off" style="font-size:48px;color:#22e5a4"></i></a>
                 <a href="https://github.com/lkorycki" target="_blank">
-                    <i class="fa fa-github-square" style="font-size:48px;color:#22e5a4"></i></a>
+                    <i class="fa fa-github-square intro-anim-header delay500off" style="font-size:48px;color:#22e5a4"></i></a>
                 <a href="korycki.lukas@gmail.com" target="_blank">
-                    <i class="fa fa-envelope-square" style="font-size:48px;color:#22e5a4"></i></a>
+                    <i class="fa fa-envelope-square intro-anim-header delay600off" style="font-size:48px;color:#22e5a4"></i></a>
             </div>
         </div>
     </div>
 
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid slideanim-hor">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-2">
                 <div class="major"><h2>About Me</h2></div>
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div id="news" class="container-fluid bg-grey">
+    <div id="events" class="container-fluid bg-grey slideanim-hor">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="major center"><h2>Events</h2></div>
@@ -191,13 +191,13 @@
     </div>
 
     <div id="research">
-        <div class="container-fluid">
+        <div class="container-fluid slideanim-hor">
             <div class="major center"><h2>Research</h2></div>
 
             <div class="row">
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
-                    <div class="slideanim"><img src="images/os_imb.png" class="thumbnail img-responsive"
+                    <div class="slideanim-vert"><img src="images/os_imb.png" class="thumbnail img-responsive"
                                                 alt="Online Oversampling for Sparsely Labeled Imbalanced and Non-Stationary Data Streams"><br>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
 
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
-                    <div class="slideanim"><img src="images/abst4.png" class="thumbnail img-responsive"
+                    <div class="slideanim-vert"><img src="images/abst4.png" class="thumbnail img-responsive"
                                                 alt="Active Learning with Abstaining Classifiers for Imbalanced Drifting Data Streams"><br>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
             <div class="row">
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
-                    <div class="slideanim"><img src="images/ens_det.jpg" class="thumbnail img-responsive"
+                    <div class="slideanim-vert"><img src="images/ens_det.jpg" class="thumbnail img-responsive"
                                                 alt="Unsupervised Drift Detector Ensembles for Data Stream Mining"><br>
                     </div>
                 </div>
@@ -251,7 +251,7 @@
                         <h4 class="mark"><strong>Unsupervised Drift Detector Ensembles for Data Stream Mining</strong><br>
                             <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
                     <h4 class="h4-small">
-                        Data stream mining is among the most contemporary branches of machine learning. The potentially infinite sources give us many opportunities and at the same time pose new challenges. To properly handle streaming data we need to improve our well-established methods, so they can work with dynamic data and under strict constraints. Supervised streaming machine learning algorithms require a certain number of labeled instances in order to stay up-to-date. Since high budgets dedicated for this purpose are usually infeasible, we have to limit the supervision as much as we can. One possible approach is to trigger labeling, only if a change is explicitly indicated by a detector. While there are several supervised algorithms dedicated for this purpose, the more practical unsupervised ones are still lacking a proper attention. In this paper, we propose a novel un-supervised ensemble drift detector that recognizes local changes in feature subspaces (EDFS) without additional supervision, using specialized committees of incremental Kolmogorov-Smirnov tests. We combine it with an adaptive classifier and update it, only if the drift detector signalizes a change. Conducted experiments show that our framework is able to efficiently adapt to various concept drifts and outperform other unsupervised algorithms.
+                        Data stream mining is among the most contemporary branches of machine learning. The potentially infinite sources give us many opportunities and at the same time pose new challenges. To properly handle streaming data we need to improve our well-established methods, so they can work with dynamic data and under strict constraints. Supervised streaming machine learning algorithms require a certain number of labeled instances in order to stay up-to-date. Since high budgets dedicated for this purpose are usually infeasible, we have to limit the supervision as much as we can. One possible approach is to trigger labeling, only if a change is explicitly indicated by a detector. While there are several supervised algorithms dedicated for this purpose, the more practical unsupervised ones are still lacking a proper attention. In this paper, we propose a novel unsupervised ensemble drift detector that recognizes local changes in feature subspaces (EDFS) without additional supervision, using specialized committees of incremental Kolmogorov-Smirnov tests. We combine it with an adaptive classifier and update it, only if the drift detector signalizes a change. Conducted experiments show that our framework is able to efficiently adapt to various concept drifts and outperform other unsupervised algorithms.
                     </h4>
                     <h4 class="text-danger"><strong> IEEE International Conference on Data Science and Advanced Analytics DSAA, Washington, D.C., USA, 2019.</strong><br>
                         <a href="https://ieeexplore.ieee.org/abstract/document/8964214" target="_blank"><kbd>Paper</kbd></a>
@@ -264,7 +264,7 @@
             <div class="row">
 
                 <div class="col-sm-3 col-sm-offset-2">
-                    <div class="slideanim"><img src="images/clust_divers.jpg" class="thumbnail img-responsive"
+                    <div class="slideanim-vert"><img src="images/clust_divers.jpg" class="thumbnail img-responsive"
                                                 alt="Clustering-Driven and Dynamically Diversified Ensemble for Drifting Data Streams"><br>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
 
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
-                    <div class="slideanim"><img src="images/alsl2.png" class="thumbnail img-responsive"
+                    <div class="slideanim-vert"><img src="images/alsl2.png" class="thumbnail img-responsive"
                                                 alt="Combining Active Learning and Self-Labeling for Data Stream Mining"><br>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
         </div>
     </div>
 
-    <div id="projects" class="container-fluid bg-grey">
+    <div id="projects" class="container-fluid bg-grey slideanim-hor">
         <div class="major center"><h2>PROJECTS</h2></div>
         <div class="row">
             <h1 class="text-center">Coming soon!</h1><br>
@@ -336,11 +336,19 @@
                 });
 
                 $(window).scroll(function () {
-                    $(".slideanim").each(function () {
+                    $(".slideanim-vert").each(function () {
                         var pos = $(this).offset().top;
                         var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
+                        if (pos < winTop + 800) {
+                            $(this).addClass("slide-vert");
+                        }
+                    });
+
+                    $(".slideanim-hor").each(function () {
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 800) {
+                            $(this).addClass("slide-hor");
                         }
                     });
                 });

@@ -32,6 +32,30 @@ h4 {
 	font-family: Montserrat, sans-serif;
 }
 
+.intro-anim-header{
+	opacity:0;
+	animation: fadein 2s forwards;
+}
+
+:root {
+	--logos-anim-offset: 1000ms;
+}
+
+.delay100off{animation-delay: calc(var(--logos-anim-offset) + 100ms);}
+.delay200off{animation-delay: calc(var(--logos-anim-offset) + 200ms);}
+.delay300off{animation-delay: calc(var(--logos-anim-offset) + 300ms);}
+.delay400off{animation-delay: calc(var(--logos-anim-offset) + 400ms);}
+.delay500off{animation-delay: calc(var(--logos-anim-offset) + 500ms);}
+.delay600off{animation-delay: calc(var(--logos-anim-offset) + 600ms);}
+
+.delay200{animation-delay: 200ms;}
+.delay600{animation-delay: 600ms;}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
 .photo {
 	width: 200px;
 }
@@ -165,19 +189,53 @@ footer .glyphicon {
 	color: rgba(48, 50, 52, 0.96);
 }
 
-.slideanim {
+.slideanim-vert {
 	visibility: hidden;
 }
 
-.slide {
-	animation-name: slide;
-	-webkit-animation-name: slide;
+.slide-vert {
+	animation-name: slide-vert;
+	-webkit-animation-name: slide-vert;
 	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
 	visibility: visible;
 }
 
-@keyframes slide {
+@keyframes slide-vert {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slide-vert {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.slideanim-hor {
+	visibility: hidden;
+}
+
+.slide-hor {
+	animation-name: slide-hor;
+	-webkit-animation-name: slide-hor;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+
+@keyframes slide-hor {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(70%);
@@ -188,7 +246,7 @@ footer .glyphicon {
 	}
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slide-hor {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(70%);
@@ -272,6 +330,8 @@ footer {
 
 .mark {
 	background-color: rgba(34, 229, 164, 0.04);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+	text-align: center;
 }
 
 .timeline{
@@ -321,7 +381,7 @@ footer {
 }
 
 .timeline__box:not(:last-of-type){
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	margin-top: 10px;
 }
 
@@ -329,7 +389,7 @@ footer {
 	content: "";
 	width: 100%;
 	height: 2px;
-	background-color: var(--uiTimelineMainColor);
+	/*background-color: var(--uiTimelineMainColor);*/
 	position: absolute;
 	left: 0;
 	z-index: -1;
