@@ -38,7 +38,7 @@ h4 {
 }
 
 :root {
-	--logos-anim-offset: 1000ms;
+	--logos-anim-offset: 500ms;
 }
 
 .delay100off{animation-delay: calc(var(--logos-anim-offset) + 100ms);}
@@ -224,6 +224,10 @@ footer .glyphicon {
 }
 
 .slideanim-hor {
+	visibility: hidden;
+}
+
+.slideanim-hor-init {
 	visibility: hidden;
 }
 

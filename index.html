@@ -44,8 +44,8 @@
     <div class="jumbotron" id="home">
         <div class="row">
             <div class="text-center">
-                <div class="intro-anim-header delay200"><h1>Łukasz Korycki</h1></div>
-                <div class="intro-anim-header delay600"><h3>PhD Student in ML/AI & Data Engineer</h3></div>
+                <div class="intro-anim-header delay200"><h1>Łukasz Korycki</h1>
+                <h3>PhD Student in ML/AI & Data Engineer</h3></div>
                 <br>
                 <a href="https://www.linkedin.com/in/%C5%82ukasz-korycki-6062ab195/" target="_blank">
                     <i class="fab fa-linkedin intro-anim-header delay100off" style="font-size:48px;color:#22e5a4"></i></a>
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div id="about" class="container-fluid slideanim-hor">
+    <div id="about" class="container-fluid slideanim-hor-init">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-2">
                 <div class="major"><h2>About Me</h2></div>
@@ -85,8 +85,6 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="major center"><h2>Events</h2></div>
-<!--                <h4><strong>Jan 2020:</strong> Lorem ipsum.</h4>-->
-<!--                <h4><strong>Jun 2020:</strong>  Lorem ipsum.</h4>-->
             </div>
         </div>
 
@@ -351,6 +349,16 @@
                             $(this).addClass("slide-hor");
                         }
                     });
+                });
+
+                $(".slideanim-hor-init").each(async function () {
+                    await new Promise(r => setTimeout(r, 200));
+                    $(this).addClass("slide-hor");
+                });
+
+                $(".slideanim-hor-init-rev").each(async function () {
+                    await new Promise(r => setTimeout(r, 200));
+                    $(this).addClass("slide-hor-rev");
                 });
             })
         </script>
