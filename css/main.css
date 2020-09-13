@@ -582,3 +582,7 @@ footer {
 	color: #219d69 !important;
 	transform: translateY(1.5px);
 }
+
+.tooltip-inner {
+	background-color: #303234;
+}
