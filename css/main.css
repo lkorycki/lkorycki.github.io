@@ -1,19 +1,21 @@
 
 h2 {
-	font-size: 24px;
+	font-size: 22px;
 	text-transform: uppercase;
 	color: #303030;
 	font-weight: 600;
 	margin-bottom: 5px;
+	font-family: Montserrat, sans-serif;
 }
 
 h4 {
-	font-size: 19px;
+	font-size: 18.5px;
 	line-height: 1.375em;
 	color: #303030;
 	font-weight: 400;
 	margin-bottom: 15px;
 	text-align: justify;
+	font-family: Montserrat, sans-serif;
 }
 
 .h4-small {
@@ -23,12 +25,14 @@ h4 {
 	font-weight: 400;
 	margin-bottom: 10px;
 	text-align: justify;
+	font-family: Montserrat, sans-serif;
 }
 
 .jumbotron {
 	background-color: rgba(48, 50, 52, 0.96);
 	color: #fff;
 	padding: 150px 25px;
+	margin-bottom: 0;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -57,7 +61,8 @@ h4 {
 }
 
 .photo {
-	width: 200px;
+	width: 220px;
+	padding-left: 50px;
 }
 
 .photo img {
@@ -341,6 +346,7 @@ footer {
 
 .major h2 {
 	font-size: 2em;
+	letter-spacing: 3px;
 }
 
 .major h2:after {
@@ -381,6 +387,7 @@ footer {
 	padding-top: 1rem;
 	padding-bottom: 3rem;
 	text-align: justify;
+	font-family: Montserrat, sans-serif;
 }
 
 /* Timeline line */
