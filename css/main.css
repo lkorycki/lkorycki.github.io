@@ -31,7 +31,7 @@ h4 {
 .jumbotron {
 	background-color: rgba(48, 50, 52, 0.96);
 	color: #fff;
-	padding: 150px 25px;
+	padding: 130px 25px;
 	margin-bottom: 0;
 	font-family: Montserrat, sans-serif;
 }
@@ -533,4 +533,52 @@ footer {
 	margin-right: auto;
 	margin-top:0;
 	order: 1;
+}
+
+.hvr-fade {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+	background-color: rgba(34, 229, 164, 0.1);
+}
+
+.hvr-fade:active {
+	transform: translateY(2px);
+}
+
+.button {
+	background-color: #303234; /* Green */
+	border: none;
+	color: white;
+	padding: 2px 5px;
+	margin-top: 4px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	font-size: 14px;
+	outline: 0;
+}
+
+.button:hover {background-color: rgb(34, 229, 164)}
+
+.button:active {
+	background-color: #21c589;
+	transform: translateY(1.5px);
+}
+
+.fa-fade:hover {
+	color: #22b179 !important;
+}
+
+.fa-fade:active {
+	color: #219d69 !important;
+	transform: translateY(1.5px);
 }
