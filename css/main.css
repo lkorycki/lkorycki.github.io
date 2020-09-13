@@ -586,3 +586,7 @@ footer {
 .tooltip-inner {
 	background-color: #303234;
 }
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: #303234;
+}
