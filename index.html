@@ -377,21 +377,16 @@
                 });
             });
 
-            // todo: only for bibtext button?
-            $('button').tooltip({
-                trigger: 'click',
-                placement: 'right'
-            });
-
             function setTooltip(btn, message) {
-                $(btn).tooltip('hide')
-                    .attr('data-original-title', message)
-                    .tooltip('show');
+                $(btn).tooltip('hide').tooltip({
+                    trigger: 'click',
+                    placement: 'right'
+                }).attr('data-original-title', message).tooltip('show');
             }
 
             function hideTooltip(btn) {
                 setTimeout(function() {
-                    $(btn).tooltip('hide');
+                    $(btn).tooltip('destroy');
                 }, 1000);
             }
 
