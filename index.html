@@ -341,14 +341,14 @@
 
     <footer class="container-fluid text-center">
         <script>
-            // document.body.classList.add('js-loading');
-            // window.addEventListener("load", showPage);
-            // function showPage() {
-            //     document.body.classList.remove('js-loading');
-            // }
+            document.body.classList.add('js-loading');
+            window.addEventListener("load", showPage);
+            function showPage() {
+                document.body.classList.remove('js-loading');
+            }
 
             $(window).on("load",function(){
-                $(".loader-wrapper").fadeOut(500);
+                $(".loader-wrapper").fadeOut(200);
             });
 
             $(document).ready(function () {
