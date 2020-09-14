@@ -1,9 +1,9 @@
 
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-	animation-play-state: paused !important;
-}
+/*.js-loading *,*/
+/*.js-loading *:before,*/
+/*.js-loading *:after {*/
+/*	animation-play-state: paused !important;*/
+/*}*/
 
 html, body {
 	max-width: 100%;

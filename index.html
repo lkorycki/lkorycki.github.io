@@ -341,19 +341,19 @@
 
     <footer class="container-fluid text-center">
         <script>
-            document.body.classList.add('js-loading');
-            window.addEventListener("load", showPage);
-            function showPage() {
-                document.body.classList.remove('js-loading');
-            }
+            // document.body.classList.add('js-loading');
+            // window.addEventListener("load", showPage);
+            // function showPage() {
+            //     document.body.classList.remove('js-loading');
+            // }
 
             $(window).on("load",function(){
-                $(".loader-wrapper").fadeOut(100);
+                $(".loader-wrapper").fadeOut(500);
             });
 
             $(document).ready(function () {
-                var now = new Date().getTime();
-                while(new Date().getTime() < now + 1000){ /* do nothing */ }
+                // var now = new Date().getTime();
+                // while(new Date().getTime() < now + 1000){ /* do nothing */ }
 
                 $(".navbar a, footer a[href='#home']").on('click', function (event) {
                     var hash = this.hash;
