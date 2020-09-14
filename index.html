@@ -352,6 +352,9 @@
             });
 
             $(document).ready(function () {
+                var now = new Date().getTime();
+                while(new Date().getTime() < now + 1000){ /* do nothing */ }
+
                 $(".navbar a, footer a[href='#home']").on('click', function (event) {
                     var hash = this.hash;
                     if (hash != "") {
