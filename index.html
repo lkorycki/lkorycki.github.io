@@ -22,6 +22,10 @@
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="300">
 
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <nav class="navbar navbar-default navbar-fixed-top slideanim-hor-init-rev">
         <div class="container">
             <div class="navbar-header">
@@ -342,6 +346,10 @@
             function showPage() {
                 document.body.classList.remove('js-loading');
             }
+
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut(100);
+            });
 
             $(document).ready(function () {
                 $(".navbar a, footer a[href='#home']").on('click', function (event) {
