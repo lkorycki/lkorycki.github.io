@@ -337,6 +337,12 @@
 
     <footer class="container-fluid text-center">
         <script>
+            document.body.classList.add('js-loading');
+            window.addEventListener("load", showPage);
+            function showPage() {
+                document.body.classList.remove('js-loading');
+            }
+
             $(document).ready(function () {
                 $(".navbar a, footer a[href='#home']").on('click', function (event) {
                     var hash = this.hash;
