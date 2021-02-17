@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-sm-6 col-sm-offset-2" style="padding: 0 50px">
                 <div class="major"><h2>About Me</h2></div>
-                <h4>I am a 3rd year Ph.D. student in the Machine Learning and Data Stream Mining Lab at Virginia Commonwealth University (Richmond, USA), working under Dr. Bartosz Krawczyk.
+                <h4>I am a 4th year Ph.D. student in the Machine Learning and Data Stream Mining Lab at Virginia Commonwealth University (Richmond, USA), working under Dr. Bartosz Krawczyk.
                     <br><br>
                     In my research, I am focused on lifelong/continual learning from stationary and non-stationary data. I have published works on online active and semi-supervised learning, effective concept drift adaptation, change detection and dynamic imbalance.
                     Most recently, I have been dedicated to the problem of catastrophic forgetting and efficient knowledge aggregation in deep neural networks with applications to computer vision.
@@ -106,6 +106,31 @@
 <!--                <div class="timeline__group">-->
 <!--                    <span class="timeline__year">Now</span>-->
 <!--                </div>-->
+                <div class="timeline__group">
+                    <div class="timeline__box">
+                        <div class="timeline__date">
+                            <span class="timeline__day">09</span>
+                            <span class="timeline__month">Feb</span>
+                        </div>
+                        <div class="timeline__post">
+                            <div class="timeline__content">
+                                <p>And our paper <a href=https://www.researchgate.net/publication/349253910_Concept_Drift_Detection_from_Multi-Class_Imbalanced_Data_Streams target="_blank">"Concept Drift Detection from Multi-Class Imbalanced Data Streams"</a> was accepted for presentation at ICDE 2021 (rank: A*)!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__box">
+                        <div class="timeline__date">
+                            <span class="timeline__day">08</span>
+                            <span class="timeline__month">Feb</span>
+                        </div>
+                        <div class="timeline__post">
+                            <div class="timeline__content">
+                                <p>Our paper <a href=https://www.researchgate.net/publication/349254127_Low-Dimensional_Representation_Learning_from_Imbalanced_Data_Streams target="_blank">"Low-Dimensional Representation Learning from Imbalanced Data Streams"</a> was accepted for presentation at PAKDD 2021 (rank: A)!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="timeline__year">2021</span>
+                </div>
 
                 <div class="timeline__group">
                     <div class="timeline__box">
@@ -222,6 +247,54 @@
 
             <div class="row">
                 <div class="col-sm-3 col-sm-offset-2">
+                    <div class="slideanim-vert"><img src="images/imb_det_boltz.png" class="thumbnail img-responsive"
+                                                     alt="Concept Drift Detection from Multi-Class Imbalanced Data Streams"><br>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 text-left slideanim-hor">
+                    <a href="https://www.researchgate.net/publication/349253910_Concept_Drift_Detection_from_Multi-Class_Imbalanced_Data_Streams" target="_blank" style="text-decoration: none">
+                        <h4 class="mark hvr-fade"><strong>Concept Drift Detection from Multi-Class Imbalanced Data Streams</strong><br>
+                            <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
+                    <h4 class="h4-small">
+                        While there exists a plethora of drift detectors, all of them assume that we are dealing with roughly balanced classes. In the case of imbalanced data streams, those detectors will be biased towards majority classes, ignoring changes happening in minority ones. Furthermore, class imbalance may evolve over time and classes may change their roles (majority becoming minority and vice versa). This is especially challenging in the multi-class setting, where relationships among classes become complex. In this paper we propose a detailed taxonomy of challenges posed by concept drift in multi-class imbalanced data streams, as well as a novel trainable concept drift detector based on Restricted Boltzmann Machine. It is capable of monitoring multiple classes at once and using reconstruction error to detect changes in each of them independently. Our detector uses a skew-insensitive loss function that allows it to handle multiple imbalanced distributions. Due to its trainable nature, it is capable of following changes in the stream and evolving class roles, as well as deal with local concept drift occurring in minority classes. Extensive experimental study on multi-class drifting data streams, enriched with a detailed analysis of the impact of local drifts and changing imbalance ratios, confirm the high efficacy of our approach.
+                    </h4>
+                    <h4 class="text-danger"><strong>37th IEEE International Conference on Data Engineering (ICDE), Crete, Greece, 2021.</strong><br>
+                        <a href="https://www.researchgate.net/publication/349253910_Concept_Drift_Detection_from_Multi-Class_Imbalanced_Data_Streams" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
+                        <button class="button" data-clipboard-text="Please, cite: https://www.researchgate.net/publication/349253910_Concept_Drift_Detection_from_Multi-Class_Imbalanced_Data_Streams"
+                        >BibTex
+                        </button>
+                    </h4>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-2">
+                    <div class="slideanim-vert"><img src="images/low_rep_imb.png" class="thumbnail img-responsive"
+                                                     alt="Low-Dimensional Representation Learning from Imbalanced Data Streams"><br>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 text-left slideanim-hor">
+                    <a href="https://www.researchgate.net/publication/349254127_Low-Dimensional_Representation_Learning_from_Imbalanced_Data_Streams" target="_blank" style="text-decoration: none">
+                        <h4 class="mark hvr-fade"><strong>Low-Dimensional Representation Learning from Imbalanced Data Streams</strong><br>
+                            <small><strong>Ł. Korycki</strong>, B. Krawczyk<br></small></h4></a>
+                    <h4 class="h4-small">
+                        We propose a novel ensemble approach for learning from imbalanced data, where each new base classifier is built using a low-dimensional embedding. We use class-dependent entropy linear manifold to find the most discriminative low-dimensional representation that is at the same time skew-insensitive. This allows us to address two challenging issues: (i) learning efficient classifiers from imbalanced and drifting streams without data resam-pling; and (ii) tackling simultaneously high-dimensional and imbalanced streams that pose extreme challenge to existing classifiers. Our proposed low-dimensional representation algorithm is a flexible plug-in that can work with any ensemble learning algorithm, making it a highly useful tool for difficult scenarios of learning from high-dimensional imbalanced and drifting data streams.
+                    </h4>
+                    <h4 class="text-danger"><strong>25th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Delhi, India, 2021.</strong><br>
+                        <a href="https://www.researchgate.net/publication/349254127_Low-Dimensional_Representation_Learning_from_Imbalanced_Data_Streams" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
+                        <button class="button" data-clipboard-text="Please, cite: https://www.researchgate.net/publication/349254127_Low-Dimensional_Representation_Learning_from_Imbalanced_Data_Streams"
+                        >BibTex
+                        </button>
+                    </h4>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-2">
                     <div class="slideanim-vert"><img src="images/attck-det-2.png" class="thumbnail img-responsive"
                                                      alt="Adversarial Concept Drift Detection under Poisoning Attacks for Robust Data Stream Mining"><br>
                     </div>
@@ -234,7 +307,7 @@
                     <h4 class="h4-small">
                         When dealing with data streams one must consider the possibility of a malicious injection of false data that simulates a concept drift. This adversarial setting assumes a poisoning attack that may be conducted in order to damage the underlying classification system by forcing adaptation to false data. Existing drift detectors are not capable of differentiating between real and adversarial concept drift. In this paper, we propose a framework for robust concept drift detection in the presence of adversarial and poisoning attacks. We introduce the taxonomy for two types of adversarial concept drifts, as well as a robust trainable drift detector. It is based on the augmented Restricted Boltzmann Machine with improved gradient computation and energy function. We also introduce Relative Loss of Robustness - a novel measure for evaluating the performance of concept drift detectors under poisoning attacks. Extensive computational experiments, conducted on both fully and sparsely labeled data streams, prove the high robustness and efficacy of the proposed drift detection framework in adversarial scenarios.
                     </h4>
-                    <h4 class="text-danger"><strong> Preprint on arXiv, 2020. </strong><br>
+                    <h4 class="text-danger"><strong>Preprint on arXiv, 2020.</strong><br>
                         <a href="https://arxiv.org/abs/2009.09497" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
                         <button class="button" data-clipboard-text="@misc{Korycki:2020adv, author={{\L}. {Korycki} and B. {Krawczyk}}, title={{Adversarial Concept Drift Detection under Poisoning Attacks for Robust Data Stream Mining}}, year={2020}, eprint={2009.09497}, archivePrefix={arXiv}, primaryClass={cs.LG}}"
                         >BibTex
@@ -258,7 +331,7 @@
                     <h4 class="h4-small">
                         Dealing with dynamic and everlasting problems poses new challenges for which traditional batch-based offline algorithms turn out to be insufficient in terms of computational time and predictive performance. One of the most crucial limitations is that we cannot assume having access to a finite and complete data set - we always have to be ready for new data that may complement our model. This poses a critical problem of providing labels for potentially unbounded streams. In the real world, we are forced to deal with very strict budget limitations, therefore, we will most likely face the scarcity of annotated instances, which are essential in supervised learning. In our work, we emphasize this problem and propose a novel instance exploitation technique. We show that when: (i) data is characterized by temporary non-stationary concepts, and (ii) there are very few labels spanned across a long time horizon, it is actually better to risk overfitting and adapt models more aggressively by exploiting the only labeled instances we have, instead of sticking to a standard learning mode and suffering from severe underfitting. We present different strategies and configurations for our methods, as well as an ensemble algorithm that attempts to maintain a sweet spot between risky and normal adaptation. Finally, we conduct a complex in-depth comparative analysis of our methods, using state-of-the-art streaming algorithms relevant to the given problem.
                     </h4>
-                    <h4 class="text-danger"><strong> Preprint on arXiv, 2020. </strong><br>
+                    <h4 class="text-danger"><strong>Preprint on arXiv, 2020.</strong><br>
                         <a href="https://arxiv.org/abs/2009.09382" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
                         <button class="button" data-clipboard-text="@misc{Korycki:2020expl, author={{\L}. {Korycki} and B. {Krawczyk}}, title={Instance exploitation for learning temporary concepts from sparsely labeled drifting data streams}, year={2020}, eprint={2009.09382}, archivePrefix={arXiv}, primaryClass={cs.LG}}"
                         >BibTex
@@ -282,7 +355,7 @@
                     <h4 class="h4-small">
                         Learning from imbalanced data and data stream mining are among the most popular areas in contemporary machine learning. There is a strong interplay between these domains, as data streams are frequently characterized by skewed distributions. However, most of the existing works focus only on binary problems, omitting significantly more challenging multi-class imbalanced data. In this paper, we propose a novel framework for learning from multi-class imbalanced data streams that simultaneously tackles three major problems in this area: (i) changing imbalance ratios among multiple classes, (ii) concept drift, and (iii) limited access to ground truth. We use active learning combined with streaming-based oversampling that uses both information about current class ratios and classifier errors on each class to create new instances in a meaningful way. Conducted experimental study shows that our single-classifier framework is capable of outperforming state-of-the-art ensembles dedicated to multi-class imbalanced data streams in both fully supervised and sparsely labeled learning scenarios.
                     </h4>
-                    <h4 class="text-danger"><strong> International Joint Conference on Neural Networks (IJCNN), Glasgow, UK, 2020. </strong><br>
+                    <h4 class="text-danger"><strong>International Joint Conference on Neural Networks (IJCNN), Glasgow, UK, 2020.</strong><br>
                         <a href="https://www.researchgate.net/publication/341463040_Online_Oversampling_for_Sparsely_Labeled_Imbalanced_and_Non-Stationary_Data_Streams" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
                         <button class="button" data-clipboard-text="Please, cite: https://www.researchgate.net/publication/341463040_Online_Oversampling_for_Sparsely_Labeled_Imbalanced_and_Non-Stationary_Data_Streams"
                         >BibTex
@@ -293,7 +366,6 @@
             </div>
 
             <div class="row">
-
                 <div class="col-sm-3 col-sm-offset-2">
                     <br>
                     <div class="slideanim-vert"><img src="images/abst4.png" class="thumbnail img-responsive"
@@ -335,7 +407,7 @@
                     <h4 class="h4-small">
                         Supervised streaming machine learning algorithms require a certain number of labeled instances in order to stay up-to-date. Since high budgets dedicated to this purpose are usually infeasible, we have to limit the supervision as much as we can. One possible approach is to trigger labeling only if a change is explicitly indicated by a detector. While there are several supervised algorithms designed for this purpose, the more practical unsupervised ones are still lacking proper attention. In this paper, we propose a novel unsupervised ensemble drift detector that recognizes local changes in feature subspaces (EDFS) without additional supervision, using specialized committees of incremental Kolmogorov-Smirnov tests. We combine it with an adaptive classifier and update it only if the drift detector signalizes a change. Conducted experiments show that our framework is able to efficiently adapt to various concept drifts and outperform other unsupervised algorithms.
                     </h4>
-                    <h4 class="text-danger"><strong> IEEE International Conference on Data Science and Advanced Analytics DSAA, Washington, D.C., USA, 2019.</strong><br>
+                    <h4 class="text-danger"><strong> IEEE International Conference on Data Science and Advanced Analytics (DSAA), Washington, D.C., USA, 2019.</strong><br>
                         <a href="https://ieeexplore.ieee.org/abstract/document/8964214" target="_blank" style="text-decoration: none"><button class="button">Paper</button></a>
                         <button class="button" data-clipboard-text=
                                 "@InProceedings{Korycki:2019ensdet, author={{\L}. {Korycki} and B. {Krawczyk}}, booktitle={{2019 IEEE International Conference on Data Science and Advanced Analytics (DSAA)}}, title={{Unsupervised Drift Detector Ensembles for Data Stream Mining}}, year={2019}}"
